@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="60" viewBox="0 0 15 60">
+  <defs>
+    <clipPath id="clip-toggle_icon">
+      <rect width="15" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="toggle_icon" clip-path="url(#clip-toggle_icon)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-1829 -52)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="7.5" cy="7.5" r="7.5" transform="translate(1829 52)" fill="#030303"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="7.5" cy="7.5" r="7.5" transform="translate(1829 75)" fill="#030303"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.5" cy="7.5" r="7.5" transform="translate(1829 97)" fill="#030303"/>
+    </g>
+  </g>
+</svg>

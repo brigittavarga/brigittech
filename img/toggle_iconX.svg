@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-toggle_iconX">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="toggle_iconX" clip-path="url(#clip-toggle_iconX)">
+    <path id="Path_30" data-name="Path 30" d="M106,4513.114l47.131-49.837" transform="translate(-99.5 -4457.777)" fill="none" stroke="#0d0d0d" stroke-linecap="round" stroke-width="8"/>
+    <path id="Path_31" data-name="Path 31" d="M153.131,4513.114,106,4463.277" transform="translate(-99.5 -4457.777)" fill="none" stroke="#0d0d0d" stroke-linecap="round" stroke-width="8"/>
+  </g>
+</svg>

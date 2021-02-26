@@ -1,0 +1,338 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@import url("https://use.typekit.net/tjj7svq.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    max-width: 1500px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right top, #ccfae4, #c1f7f3, #c1f2fe, #cbebff, #dae4ff, #dee2ff, #e2e0ff, #e7deff, #dce2ff, #d2e5ff, #cbe8ff, #c6ebfc);
+
+    height: 100vh;
+}
+
+/*  
+custom shape divider CSS
+*/
+.custom-shape-divider-bottom-1614282129 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1614282129 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 99px;
+}
+
+.custom-shape-divider-bottom-1614282129 .shape-fill {
+    fill: #FFFFFF;
+}
+/*  
+custom shape divider CSS END
+*/
+
+.logo_svg,
+.toggle-icon {
+    cursor: pointer;
+}
+
+.logo_svg {
+    max-width: 2.4em;
+}
+
+.toggle-icon {
+    max-height: 2.4em;
+}
+
+nav {
+    min-height: 10vh;
+    padding: 3em 3em 0 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.heading-container h1 {
+    font-family: new-spirit, serif;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.heading-container h2 {
+    font-weight: 200;
+    font-size: 1.1em;
+    padding-bottom: 3em;
+}
+
+.portfolio-btn-svg {
+    max-height: 1.5em;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(40%);
+    line-height: 2;
+    text-align: center;
+}
+
+.heading-container .portfolio-btn {
+    background-color: #050505;
+    padding: 0.4em 1.5em;
+    display: inline-block;
+    border-radius: 1.3em;
+}
+
+.heading-container .portfolio-btn a {
+    color: #CFFAE4;
+    text-decoration: none;
+    font-family: new-spirit, serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#portfolio {
+    padding: 3em;
+}
+
+#portfolio h3 {
+    font-family: new-spirit, serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-bottom: 0.8em;
+}
+
+.portfolio-text {
+    margin-bottom: 3em;
+}
+
+#portfolio p {
+    font-size: 1em;
+    max-width: 100%;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.project h4 {
+    font-family: new spirit, serif;
+    font-size: 1.3em;
+    color: #050505;
+    padding: 0.5em 0;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay .btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border-radius: 1.3em;
+    font-weight: 200;
+    font-size: 1.2em;
+    font-family: new spirit, serif;
+    width: 10em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.overlay .btn:hover {
+}
+
+.btn-to-site {
+    background: #050505;
+    color: #FFFFFF;
+}
+
+.btn-to-github {
+    background: #F8D8FC;
+    color: #050505;
+}
+
+.project {
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+.project-img-container {
+    position: relative;
+}
+
+.project-img-container:hover .project-image {
+    opacity: 0.3;
+}
+
+.project-img-container:hover .overlay {
+    opacity: 1;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.project span {
+    color: #636363;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #050505;
+    min-height: 20vh;
+    color: #cffaec;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+footer .copyright {
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social h5 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+footer .social-icons {
+    width: 30vw;
+    display: flex;
+    justify-content:space-around;
+}
+
+.github-icon,
+.twitter-icon,
+.linkedin-icon {
+    height: 1.5em;
+}
+
+@media screen and (min-width: 807px) {
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .row-1,
+    .row-2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project {
+        width: 45%;
+    }
+
+
+    .logo_svg {
+    max-width: 2.6em;
+    }
+
+    .toggle-icon {
+        max-height: 2.6em;
+    }
+
+    #portfolio p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        font-weight: 200;
+    }
+
+
+    .heading-container h1 {
+        font-size: 2.5em;
+    }
+
+    .heading-container h2 {
+        font-size: 1.3em;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+    }
+
+    footer .social-icons {
+        justify-content:space-evenly;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    footer .social-icons {
+        width: 20vw;
+    }
+}
