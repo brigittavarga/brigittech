@@ -22,6 +22,37 @@ header {
 
     height: 100vh;
 }
+ 
+.menu-links {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: 3em;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-links a {
+    list-style: none;
+    text-decoration: none;
+    color: #050505;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.menu-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #050505;
+    transition: width .3s;
+}
+
+.menu-links a:hover::after {
+    width: 100%;
+}
 
 /*  
 custom shape divider CSS
@@ -50,17 +81,31 @@ custom shape divider CSS
 custom shape divider CSS END
 */
 
-.logo_svg,
+.logo_svg_link,
 .toggle-icon {
     cursor: pointer;
+}
+
+.toggle-close {
+    opacity: 0;
 }
 
 .logo_svg {
     max-width: 2.4em;
 }
 
-.toggle-icon {
-    max-height: 2.4em;
+.toggle-open,
+.toggle-close {
+    transition: all 0.4s ease-in-out;
+
+}
+
+.toggle-open {
+    max-height: 2em;
+}
+
+.toggle-close {
+    max-width: 2em;
 }
 
 nav {
@@ -103,6 +148,12 @@ nav {
     border-radius: 1.3em;
 }
 
+.heading-container .portfolio-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 500ms;
+}
+
 .heading-container .portfolio-btn a {
     color: #CFFAE4;
     text-decoration: none;
@@ -129,16 +180,60 @@ nav {
     margin-bottom: 3em;
 }
 
-#portfolio p {
-    font-size: 1em;
+#portfolio p,
+article p,
+.tech-stack-items span {
+    font-size: 1.1em;
     max-width: 100%;
-    line-height: 1.6;
+    line-height: 1.8;
     font-weight: 200;
 }
 
-.project h4 {
+article.tech-stack {
+    padding-bottom: 5em;
+}
+
+.tech-stack-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    flex-wrap: wrap;
+}
+
+.tech-stack-row-1 span {
+    padding: 0 0.6em 0.6em 0;
+}
+
+.project h4,
+article h2 {
     font-family: new spirit, serif;
+}
+
+article h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+}
+
+article {
+    padding-bottom: 2em;
+    color: #050505;
+}
+
+.articles-container {
+    padding-top: 3em;
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+.project h4 {
     font-size: 1.3em;
+    font-weight: 500;
     color: #050505;
     padding: 0.5em 0;
 }
@@ -182,7 +277,10 @@ nav {
     margin-bottom: 2em;
 }
 
-.overlay .btn:hover {
+.overlay .btn:hover,
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: all ease 500ms;
 }
 
 .btn-to-site {
@@ -229,6 +327,98 @@ nav {
 .project span {
     color: #636363;
     font-size: 1em;
+}
+
+.path_aboutme_left,
+.path_aboutme_right,
+.path_contact_left,
+.path_contact_right {
+    position: absolute;
+}
+
+.path_aboutme_left {
+    top: 0;
+    left: 0;
+    height: 60%;
+    z-index: -10;
+}
+
+.path_aboutme_right,
+.path_contact_right {
+    right: 0;
+    top: 45%;
+    height: 70%;
+    z-index: -10;
+}
+
+.path_contact_left {
+    top: 0;
+    left: -1%;
+    height: 40%;
+    z-index: -100;
+}
+
+article.sayhi,
+article.form {
+    color: #050505;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+article.sayhi .text-container {
+    margin-bottom: 1.2em;
+}
+
+article.sayhi .text-container p {
+    font-size: 1em;
+}
+
+article.sayhi a {
+    background-image: linear-gradient(to right top, #f8d8fc, #e6deff, #d5e4ff, #c9e8ff, #c4ebfa);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #050505;
+    border-radius: 2em;
+    font-weight: 100;
+    font-size: 1.1em;
+}
+
+.input-container,
+textarea {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+label {
+    padding-bottom: 1em;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+input,
+textarea {
+    outline: none;
+    font-size: 1.1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #585858;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #050505;
+    color: #cffaec;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    font-family: new spirit, serif;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
 }
 
 footer {
@@ -279,6 +469,11 @@ footer .social-icons {
 }
 
 @media screen and (min-width: 807px) {
+
+    .menu-links {
+        width: 23vw;
+    }
+
     .projects-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -309,13 +504,36 @@ footer .social-icons {
         font-weight: 200;
     }
 
-
     .heading-container h1 {
         font-size: 2.5em;
     }
 
     .heading-container h2 {
         font-size: 1.3em;
+    }
+
+    .articles-container {
+        max-width: 70vw;
+        min-height: 100vh;
+    }
+
+    .tech-stack-row {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .tech-stack-row-2 {
+        max-width: 60%;
+    }
+
+    .input-container,
+    textarea {
+        max-width: 60vw;
+    }
+
+
+    article.sayhi .text-container p {
+        font-size: 1.1em;
     }
 
     footer {
@@ -334,5 +552,10 @@ footer .social-icons {
 
     footer .social-icons {
         width: 20vw;
+    }
+
+    .input-container,
+    textarea {
+        max-width: 55vw;
     }
 }
