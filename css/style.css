@@ -21,6 +21,7 @@ header {
     background-image: linear-gradient(to right top, #ccfae4, #c1f7f3, #c1f2fe, #cbebff, #dae4ff, #dee2ff, #e2e0ff, #e7deff, #dce2ff, #d2e5ff, #cbe8ff, #c6ebfc);
 
     height: 100vh;
+    width: 100vw;
 }
  
 .menu-links {
