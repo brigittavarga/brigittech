@@ -2,11 +2,13 @@ document.write(`
 <nav>
 
 <!-- svg logo icon -->
+<a href="index.html">
 <svg class="logo_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432.78 444.91"><defs><style>.cls-1{fill:#0b0b0b;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="53.66" height="444.91" rx="26.83"/><circle class="cls-1" cx="213.01" cy="305.61" r="139.3"/><circle class="cls-1" cx="153.31" cy="80.23" r="80.23"/><circle class="cls-1" cx="387.78" cy="399.92" r="45"/></g></g></svg>
+</a>
 
 <ul class="menu-links">
    <a href="about.html"><li>About</li></a>
-   <a href="#portfolio"><li>Portfolio</li></a>
+   <a href="index.html#portfolio"><li>Portfolio</li></a>
    <a href="contact.html"><li>Contact</li></a>
 </ul>
 

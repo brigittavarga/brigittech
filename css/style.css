@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     width: 50vw;
     margin-left: auto;
-    margin-right: 3em;
+    margin-right: calc(3em + 32px);
     transition: all 0.4s ease-in-out;
 }
 
@@ -86,12 +86,8 @@ custom shape divider CSS END
     cursor: pointer;
 }
 
-.toggle-close {
-    opacity: 0;
-}
-
 .logo_svg {
-    max-width: 2.4em;
+    width: 2.5em;
 }
 
 .toggle-open,
@@ -101,11 +97,16 @@ custom shape divider CSS END
 }
 
 .toggle-open {
-    max-height: 2em;
+    height: 2.5em;
+    position: absolute;
+    right: 4em;
 }
 
 .toggle-close {
-    max-width: 2em;
+    opacity: 0;
+    width: 2em;
+    position: absolute;
+    right: calc(3em + 9px);
 }
 
 nav {
@@ -282,6 +283,7 @@ input[type="submit"]:hover {
     transform: scale(1.1);
     transition: all ease 500ms;
 }
+
 
 .btn-to-site {
     background: #050505;
@@ -487,11 +489,6 @@ footer .social-icons {
 
     .project {
         width: 45%;
-    }
-
-
-    .logo_svg {
-    max-width: 2.6em;
     }
 
     .toggle-icon {
