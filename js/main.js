@@ -1,4 +1,4 @@
-const menuLinks = document.querySelector(".menu-links");
+const menuLinks = document.querySelector(".nav-wrapper");
 const toggleClose = document.querySelector(".toggle-close");
 const toggleOpen = document.querySelector(".toggle-open");
 
@@ -36,18 +36,16 @@ function mouseBlack() {
 
 footer.addEventListener("mouseover", mouseWhite);
 footer.addEventListener("mouseleave", mouseBlack);
-btnToSite.addEventListener("mouseover", mouseWhite);
-btnToSite.addEventListener("mouseleave", mouseBlack);
 
-// Toggle menu function 
+// Toggle nav function 
 function toggleFunction() {
-    if (menuLinks.style.opacity === "1") {
-      menuLinks.style.opacity = "0";
-      toggleOpen.style.opacity = "1";
-      toggleClose.style.opacity = "0";
-    } else {
-      menuLinks.style.opacity = "1";
-      toggleOpen.style.opacity = "0";
-      toggleClose.style.opacity = "1";
-    }
+  if (menuLinks.style.display === "flex") {
+    menuLinks.style.display = "none";
+    toggleOpen.style.opacity = "1";
+    toggleClose.style.opacity = "0";
+  } else {
+    menuLinks.style.display = "flex";
+    toggleOpen.style.opacity = "0";
+    toggleClose.style.opacity = "1";
   }
+}
