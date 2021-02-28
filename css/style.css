@@ -14,12 +14,36 @@ html {
     scroll-snap-type: mandatory;
 }
 
-.main-container {
-    max-width: 1500px;
-}
-
 body {
     font-family: "Open Sans", sans-serif;
+    cursor: none;
+}
+
+.cursor {
+    z-index: 100;
+    width: 2rem;
+    height: 2rem;
+    background-color: #050505;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%; /* 100% left and right, 100% up and down */
+}
+
+.link-grow {
+    transform: scale(2.5);
+    background: #050505;
+}
+
+.mouse-white {
+    background-color: #fff;
+}
+
+.main-container {
+    max-width: 1500px;
 }
 
 header {
@@ -39,14 +63,22 @@ header {
     transition: all 0.4s ease-in-out;
 }
 
-.menu-links a {
+.menu-links li {
+    z-index: 200;
     list-style: none;
     text-decoration: none;
     color: #050505;
     font-size: 1.2em;
     font-weight: 400;
+    padding: 1rem;
 }
 
+.menu-links li a {
+    text-decoration: none;
+    color: #050505;
+}
+
+/*
 .menu-links a::after {
     content: '';
     display: block;
@@ -58,6 +90,11 @@ header {
 
 .menu-links a:hover::after {
     width: 100%;
+}
+*/
+
+.menu-links a:hover {
+    color: #fff;
 }
 
 /*  
@@ -86,12 +123,6 @@ custom shape divider CSS
 /*  
 custom shape divider CSS END
 */
-
-.logo_svg_link,
-.toggle-icon {
-    cursor: pointer;
-}
-
 .logo_svg {
     width: 2.5em;
 }
@@ -156,7 +187,6 @@ nav {
 }
 
 .heading-container .portfolio-btn:hover {
-    cursor: pointer;
     transform: scale(1.1);
     transition: all ease-in-out 500ms;
 }
@@ -223,7 +253,7 @@ article h2 {
 
 article h2 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-bottom: 0.5em;
 }
 
@@ -288,6 +318,7 @@ article {
 input[type="submit"]:hover {
     transform: scale(1.1);
     transition: all ease 500ms;
+    cursor: none;
 }
 
 
@@ -419,7 +450,6 @@ input {
 }
 
 input[type="submit"] {
-    cursor: pointer;
     background-color: #050505;
     color: #cffaec;
     padding: 0.5em 1em;
