@@ -2,6 +2,7 @@ const menuLinks = document.querySelector(".menu-links");
 const toggleClose = document.querySelector(".toggle-close");
 const toggleOpen = document.querySelector(".toggle-open");
 
+// Toggle menu function 
 function toggleFunction() {
     if (menuLinks.style.opacity === "1") {
       menuLinks.style.opacity = "0";
@@ -13,3 +14,4 @@ function toggleFunction() {
       toggleClose.style.opacity = "1";
     }
   }
+

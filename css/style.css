@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
 .main-container {
     max-width: 1500px;
 }
@@ -22,7 +27,6 @@ header {
 
     height: 100vh;
     width: 100vw;
-    align-self: center;
 }
  
 .menu-links {
@@ -142,7 +146,6 @@ nav {
     transform: translateY(40%);
     line-height: 2;
     text-align: center;
-    max-width: 1400px;
 }
 
 .heading-container .portfolio-btn {
@@ -477,7 +480,7 @@ footer .social-icons {
 @media screen and (min-width: 807px) {
 
     .menu-links {
-        width: 23vw;
+        width: 40vw;
     }
 
     .projects-container {
@@ -549,6 +552,13 @@ footer .social-icons {
     }
 }
 
+@media screen and (min-width: 912px) {
+
+    .menu-links {
+        width: 30vw;
+    }
+}
+
 @media screen and (min-width: 1080px) {
 
     footer .social-icons {
@@ -558,5 +568,22 @@ footer .social-icons {
     .input-container,
     textarea {
         max-width: 55vw;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 0.9em;
+    }
+
+    .menu-links a {
+        padding-bottom: 1.2em;
+    }
+
+    .heading-container {
+        transform: none;
     }
 }
