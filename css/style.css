@@ -292,8 +292,12 @@ article {
 input[type="submit"]:hover {
     transform: scale(1.1);
     transition: all ease 500ms;
+
 }
 
+input[type="submit"]:hover {
+    cursor: pointer;
+}
 
 .btn-to-site {
     background: #050505;
