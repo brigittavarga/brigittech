@@ -122,7 +122,7 @@ custom shape divider CSS END
 
 nav {
     min-height: 10vh;
-    padding: 3em 3em 0 3em;
+    padding: 1em 3em 0 3em;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -481,6 +481,10 @@ footer .social-icons {
 }
 
 @media screen and (min-width: 807px) {
+    
+    nav {
+        padding: 3em 3em 0 3em;
+    }
 
     .menu-links {
         width: 40vw;
