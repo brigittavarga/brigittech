@@ -158,11 +158,11 @@ nav {
     padding: 0.4em 1.5em;
     display: inline-block;
     border-radius: 1.3em;
+    transition: all ease-in-out 500ms;
 }
 
 .heading-container .portfolio-btn:hover {
     transform: scale(1.1);
-    transition: all ease-in-out 500ms;
 }
 
 .heading-container .portfolio-btn a {
