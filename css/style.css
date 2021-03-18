@@ -14,7 +14,9 @@ html {
     scroll-snap-type: mandatory;
 }
 
-body {
+body,
+input,
+textarea {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -131,17 +133,17 @@ nav {
 .heading-container h1 {
     font-family: new-spirit, serif;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2em !important;
 }
 
 .heading-container h2 {
     font-weight: 200;
     font-size: 1.1em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .portfolio-btn-svg {
-    max-height: 1.5em;
+    max-height: 1.2em;
 }
 
 .heading-container {
@@ -155,7 +157,7 @@ nav {
 
 .heading-container .portfolio-btn {
     background-color: #050505;
-    padding: 0.4em 1.5em;
+    padding: 0.2em 1em;
     display: inline-block;
     border-radius: 1.3em;
     transition: all ease-in-out 500ms;
@@ -168,7 +170,7 @@ nav {
 .heading-container .portfolio-btn a {
     color: #CFFAE4;
     text-decoration: none;
-    font-family: "new-spirit", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 100;
     display: flex;
@@ -183,7 +185,7 @@ nav {
 #portfolio h3 {
     font-family: "new-spirit", serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 0.8em;
 }
 
@@ -218,11 +220,6 @@ article.tech-stack {
 
 .tech-stack-row-1 span {
     padding: 0 0.6em 0.6em 0;
-}
-
-.project h4,
-article h2 {
-    font-family: "new spirit", serif;
 }
 
 article h2 {
@@ -280,9 +277,8 @@ article {
     display: inline-block;
     padding: 0.5em 1.5em;
     border-radius: 1.3em;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 1.2em;
-    font-family: "new spirit", serif;
     width: 10em;
     text-align: center;
     margin-bottom: 2em;
@@ -374,6 +370,12 @@ input[type="submit"]:hover {
     z-index: -100;
 }
 
+.about-heading,
+article.sayhi h2 {
+    font-family: "new spirit", serif;
+    font-weight: 400 !important;
+}
+
 article.sayhi,
 article.form {
     color: #050505;
@@ -417,7 +419,6 @@ input,
 textarea {
     outline: none;
     font-size: 1.1em;
-    font-family: "Open Sans", sans-serif;
     font-weight: 100;
 }
 
@@ -429,10 +430,9 @@ input {
 input[type="submit"] {
     background-color: #050505;
     color: #cffaec;
-    padding: 0.5em 1em;
+    padding: 0.4em 0.8em;
     border-radius: 2em;
-    font-family: "new spirit", serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -524,7 +524,7 @@ footer .social-icons {
     }
 
     .heading-container h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .articles-container {
